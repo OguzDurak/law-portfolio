@@ -326,10 +326,10 @@ const Services: React.FC = () => {
             <ContactTitle>Hukuki Sorunlarınız İçin Bizimle İletişime Geçin</ContactTitle>
             <ContactText>
               Hangi konuda olursa olsun, hukuki sorunlarınızı çözmek için buradayız. 
-              Ücretsiz ilk danışmanlık için hemen iletişime geçin.
+              Danışmanlık için hemen iletişime geçin.
             </ContactText>
             <ContactButton>
-              Ücretsiz Danışmanlık Al
+             Danışmanlık Al
             </ContactButton>
           </ContactContent>
         </ContactSection>
