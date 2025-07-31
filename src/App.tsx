@@ -3,14 +3,18 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import styled from 'styled-components';
 import Header from './components/Header';
 import Hero from './components/Hero';
+import Footer from './components/Footer';
 import './App.css';
 
 const AppContainer = styled.div`
   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 `;
 
 const MainContent = styled.main`
   padding-top: 80px; /* Header'ın yüksekliği kadar padding */
+  flex: 1;
 `;
 
 function App() {
@@ -27,6 +31,7 @@ function App() {
             <Route path="/iletisim" element={<div>İletişim Sayfası</div>} />
           </Routes>
         </MainContent>
+        <Footer />
       </AppContainer>
     </Router>
   );
