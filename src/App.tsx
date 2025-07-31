@@ -7,6 +7,7 @@ import Footer from './components/Footer';
 import About from './components/About';
 import Services from './components/Services';
 import Contact from './components/Contact'; // Added Contact import
+import Team from './components/Team';
 import './App.css';
 
 const AppContainer = styled.div`
@@ -30,7 +31,7 @@ function App() {
             <Route path="/" element={<Hero />} />
             <Route path="/hakkimizda" element={<About />} />
             <Route path="/hizmetler" element={<Services />} />
-            <Route path="/ekip" element={<div>Ekibimiz Sayfası</div>} />
+            <Route path="/ekip" element={<Team />} />
             <Route path="/iletisim" element={<Contact />} /> {/* Updated to Contact component */}
           </Routes>
         </MainContent>
