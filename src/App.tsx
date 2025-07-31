@@ -5,6 +5,7 @@ import Header from './components/Header';
 import Hero from './components/Hero';
 import Footer from './components/Footer';
 import About from './components/About';
+import Services from './components/Services';
 import './App.css';
 
 const AppContainer = styled.div`
@@ -27,7 +28,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Hero />} />
             <Route path="/hakkimizda" element={<About />} />
-            <Route path="/hizmetler" element={<div>Hizmetler Sayfası</div>} />
+            <Route path="/hizmetler" element={<Services />} />
             <Route path="/ekip" element={<div>Ekibimiz Sayfası</div>} />
             <Route path="/iletisim" element={<div>İletişim Sayfası</div>} />
           </Routes>
