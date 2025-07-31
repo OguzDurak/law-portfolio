@@ -4,10 +4,11 @@ import styled from 'styled-components';
 const AboutContainer = styled.div`
   padding: 120px 0 80px;
   background: #f8f9fa;
+  font-family: 'Poppins', sans-serif;
 `;
 
 const AboutContent = styled.div`
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
   padding: 0 2rem;
 `;
@@ -29,7 +30,7 @@ const AboutTitle = styled.h1`
 `;
 
 const AboutSubtitle = styled.p`
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   color: #7f8c8d;
   max-width: 600px;
   margin: 0 auto;
@@ -224,9 +225,9 @@ const About: React.FC = () => {
 
         <AboutGrid>
           <AboutSection>
-            <h2>Bizim Hikayemiz</h2>
+            <h2 style={{textAlign: 'center'}}>Bizim Hikayemiz</h2>
             <p>
-              2014 yılında Çanakkale'de kurulan Bilgiç Avukatlık ve Hukuk Bürosu, 
+              2025 yılında Çanakkale'de Avukat Gülümser Bilgiç tarafından kurulan Bilgiç Avukatlık ve Hukuk Bürosu, 
               müvekkillerimize en yüksek kalitede hukuki hizmet sunma misyonuyla yola çıktı.
             </p>
             <p>
@@ -240,7 +241,7 @@ const About: React.FC = () => {
           </AboutSection>
 
           <AboutSection>
-            <h2>Misyonumuz</h2>
+            <h2 style={{textAlign: 'center'}}>Misyonumuz</h2>
             <p>
               Müvekkillerimizin hukuki haklarını en etkili şekilde korumak ve 
               adalete erişimlerini kolaylaştırmak için çalışıyoruz.
@@ -256,29 +257,7 @@ const About: React.FC = () => {
           </AboutSection>
         </AboutGrid>
 
-        <StatsSection>
-          <StatsContent>
-            <StatsTitle>Başarılarımız</StatsTitle>
-            <StatsGrid>
-              <StatItem>
-                <div className="stat-number">500+</div>
-                <div className="stat-label">Başarılı Dava</div>
-              </StatItem>
-              <StatItem>
-                <div className="stat-number">10+</div>
-                <div className="stat-label">Yıl Deneyim</div>
-              </StatItem>
-              <StatItem>
-                <div className="stat-number">1000+</div>
-                <div className="stat-label">Mutlu Müvekkil</div>
-              </StatItem>
-              <StatItem>
-                <div className="stat-number">24/7</div>
-                <div className="stat-label">Hukuki Destek</div>
-              </StatItem>
-            </StatsGrid>
-          </StatsContent>
-        </StatsSection>
+     
 
         <ValuesSection>
           <ValuesTitle>Değerlerimiz</ValuesTitle>
@@ -319,18 +298,18 @@ const About: React.FC = () => {
           <TeamGrid>
             <TeamCard>
               <div className="team-photo">👨‍💼</div>
-              <h3>Av. Mehmet Bilgiç</h3>
-              <div className="position">Kurucu Ortak</div>
+              <h3>Av. Gülümser Bilgiç</h3>
+              <div className="position">Kurucu</div>
               <div className="description">
-                10+ yıl deneyimli, aile hukuku ve ticaret hukuku alanlarında uzman.
+                Borç Anlaşması, Ev Sahibi ve Kiracı Davaları, Fikri Mülkiyet Davaları, Ceza Davası Savunma Avukatı
               </div>
             </TeamCard>
             <TeamCard>
               <div className="team-photo">👩‍💼</div>
-              <h3>Av. Ayşe Yılmaz</h3>
-              <div className="position">Kıdemli Avukat</div>
+              <h3>Av. Duygu Gedikoğlu</h3>
+              <div className="position">Avukat</div>
               <div className="description">
-                İş hukuku ve sosyal güvenlik hukuku konularında uzman, 8 yıl deneyim.
+                Gedikoğlu Diri Hukuk Bürosu Kurucusu ve İş Ortağımız
               </div>
             </TeamCard>
             <TeamCard>
