@@ -6,6 +6,7 @@ import Hero from './components/Hero';
 import Footer from './components/Footer';
 import About from './components/About';
 import Services from './components/Services';
+import Contact from './components/Contact'; // Added Contact import
 import './App.css';
 
 const AppContainer = styled.div`
@@ -30,7 +31,7 @@ function App() {
             <Route path="/hakkimizda" element={<About />} />
             <Route path="/hizmetler" element={<Services />} />
             <Route path="/ekip" element={<div>Ekibimiz Sayfası</div>} />
-            <Route path="/iletisim" element={<div>İletişim Sayfası</div>} />
+            <Route path="/iletisim" element={<Contact />} /> {/* Updated to Contact component */}
           </Routes>
         </MainContent>
         <Footer />
