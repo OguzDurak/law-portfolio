@@ -179,7 +179,15 @@ const Header: React.FC = () => {
           <NavLink to="/iletisim" onClick={() => setIsMenuOpen(false)}>
             İletişim
           </NavLink>
-          <ContactButton onClick={() => setIsMenuOpen(false)}>
+          <ContactButton 
+            onClick={() => {
+              setIsMenuOpen(false);
+                             const phoneNumber = "905317209425"; // +90 5317209425
+              const message = "Merhaba, hukuki danışmanlık almak istiyorum.";
+              const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+              window.open(whatsappUrl, '_blank');
+            }}
+          >
            Danışmanlık Al
           </ContactButton>
         </NavLinks>
